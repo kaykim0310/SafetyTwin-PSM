@@ -1,5 +1,5 @@
 """
-PSM-SafetyTwin P&ID Parser - Streamlit 체험판
+SafetyTwin-PSM P&ID Parser - Streamlit 체험판
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 코딩을 모르는 분도 클릭만으로 P&ID 분석을 체험할 수 있는 화면입니다.
 
@@ -20,7 +20,7 @@ from pathlib import Path
 # 페이지 설정
 # ============================================================
 st.set_page_config(
-    page_title="PSM-SafetyTwin P&ID Parser",
+    page_title="SafetyTwin-PSM P&ID Parser",
     page_icon="🏭",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -141,7 +141,7 @@ DEMO_RESULTS = {
 # 사이드바
 # ============================================================
 with st.sidebar:
-    st.markdown("## 🏭 PSM-SafetyTwin")
+    st.markdown("## 🏭 SafetyTwin-PSM")
     st.markdown("**P&ID Parser v1.0**")
     st.markdown("D-Fine (Apache 2.0) 기반")
     st.divider()
@@ -159,7 +159,7 @@ with st.sidebar:
     do_match = st.checkbox("심볼-텍스트 매칭", value=True)
 
     st.divider()
-    st.caption("© 2026 PSM-SafetyTwin")
+    st.caption("© 2026 SafetyTwin-PSM")
     st.caption("라이선스: Apache 2.0")
 
 
@@ -169,7 +169,7 @@ with st.sidebar:
 if page == "🏠 프로그램 소개":
     st.html("""
     <div class="header-box">
-        <h1>🏭 PSM-SafetyTwin P&ID Parser</h1>
+        <h1>🏭 SafetyTwin-PSM P&ID Parser</h1>
         <p>P&ID 도면을 AI가 자동으로 읽어서 디지털 데이터로 바꿔주는 프로그램</p>
     </div>
     """)
@@ -224,7 +224,7 @@ if page == "🏠 프로그램 소개":
         st.error("디지털 데이터 없음")
 
     with col2:
-        st.markdown("#### ✅ PSM-SafetyTwin (AI)")
+        st.markdown("#### ✅ SafetyTwin-PSM (AI)")
         st.success("도면 1장 분석에 **10초 이내**")
         st.success("**95% 이상** 일관된 정확도")
         st.success("PSM 안전장치 **자동 식별**")
